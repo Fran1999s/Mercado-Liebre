@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3000;
+
 
 app.use (express.static("public"));
 app.get ("/", (req, res) => {
@@ -10,6 +10,6 @@ app.get ("/", (req, res) => {
 });
 
 
-const puerto = process.env.PORT || 3000;
-app.listen (port, () => 
-console.log("Esta corriendo el puerto " + port));
+let port = process.env.PORT || 3000;
+
+app.listen (port, () => console.log("Esta corriendo el puerto " + port));
