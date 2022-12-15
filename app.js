@@ -10,6 +10,6 @@ app.get ("/", (req, res) => {
 });
 
 
-const port = process.env.PORT || 3000;
+const puerto = process.env.PORT || 3000;
 app.listen (port, () => 
 console.log("Esta corriendo el puerto " + port));
